@@ -1,0 +1,105 @@
+/* Estilos específicos para la página de detalle del producto */
+
+.pagina-detalle-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sección principal de los detalles del producto */
+.detalles-producto {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--color-background-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
+}
+
+/* Imagen del producto */
+.imagen-producto {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.imagen-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Información del producto */
+.info-producto {
+    flex: 2 1 500px;
+}
+
+.info-producto h1 {
+    font-size: 2.5rem;
+    color: var(--color-accent-green);
+    margin-top: 0;
+}
+
+.precio-producto {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-accent-blue);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.descripcion-producto {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.acciones-producto {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.boton-comprar {
+    background-color: var(--color-accent-green);
+}
+
+.boton-comprar:hover {
+    background-color: #38c172; /* Un tono más claro al pasar el mouse */
+}
+
+/* Información extra y reseñas */
+.info-extra-producto {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.info-extra-producto h3 {
+    color: var(--color-accent-blue);
+    margin-bottom: 0.5rem;
+}
+
+.sin-reseñas {
+    font-style: italic;
+    color: var(--color-text-secondary);
+}
+
+/* Sección de productos relacionados */
+.productos-relacionados {
+    text-align: center;
+}
+
+.productos-relacionados h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}

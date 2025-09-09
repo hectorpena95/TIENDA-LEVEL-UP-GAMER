@@ -1,0 +1,114 @@
+/* Estilos globales */
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-headings);
+    color: var(--color-accent-blue);
+}
+
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-accent-green);
+}
+
+/* Estilos del Header */
+header {
+    background-color: var(--color-background-secondary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-accent-blue);
+}
+
+.logo a {
+    font-family: var(--font-family-headings);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Estilos de las secciones principales */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 6rem 1rem;
+    background-image: url('../img/background.jpg'); /* Asegúrate de tener esta imagen en tu carpeta img */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6); /* Superposición para hacer el texto legible */
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent-green);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-accent-blue);
+    color: var(--color-text-primary);
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent-green);
+    color: var(--color-background-primary);
+}
+
+.featured-products, .community-section {
+    margin-top: 4rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: var(--color-background-secondary);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    border-top: 2px solid var(--color-accent-blue);
+    color: var(--color-text-secondary);
+}

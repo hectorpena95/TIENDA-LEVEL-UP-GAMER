@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto - Level-Up Gamer</title>
+    
+    <link rel="stylesheet" href="../src/assets/css/variables.css">
+    <link rel="stylesheet" href="../src/assets/css/style.css">
+    <link rel="stylesheet" href="../src/assets/css/detalle-producto.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Level-Up Gamer</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-detalle-producto">
+        <section class="detalles-producto">
+            <div class="imagen-producto">
+                <img src="" alt=""> 
+            </div>
+            <div class="info-producto">
+                <h1 id="nombre-producto"></h1>
+                <p class="precio-producto" id="precio-producto"></p>
+                <p class="descripcion-producto" id="descripcion-producto"></p>
+                
+                <div class="acciones-producto">
+                <button class="boton-cta boton-agregar-carrito">Agregar al Carrito</button>
+                <button class="boton-cta boton-comprar">Comprar Ahora</button>
+            </div>
+            
+                <div class="info-extra-producto">
+                    <h3>Origen de Producto:</h3>
+                    <p id="origen-producto"></p>
+                    <h3>Reseñas y Calificaciones:</h3>
+                    <div class="reseñas">
+                        <p class="sin-reseñas">Aún no hay reseñas para este producto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-relacionados">
+            <h2>Productos Relacionados</h2>
+            <div class="cuadricula-productos">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../src/assets/js/productos.js"></script>
+    <script src="../src/assets/js/carrito.js"></script>
+
+</body>
+</html>

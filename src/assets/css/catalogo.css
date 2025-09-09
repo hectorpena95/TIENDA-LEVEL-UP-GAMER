@@ -1,0 +1,111 @@
+/* Estilos específicos para la página de catálogo */
+
+.pagina-catalogo {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de la barra lateral (filtros) */
+.barra-lateral {
+    width: 250px;
+    padding: 1.5rem;
+    background-color: var(--color-background-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.barra-lateral h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.grupo-filtro {
+    margin-bottom: 2rem;
+}
+
+.grupo-filtro h3 {
+    font-size: 1.1rem;
+    color: var(--color-accent-blue);
+    margin-bottom: 0.5rem;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease;
+}
+
+.barra-lateral ul li a:hover,
+.barra-lateral ul li a.activo {
+    color: var(--color-accent-green);
+    font-weight: bold;
+}
+
+/* Estilos de la sección de productos */
+.contenedor-productos {
+    flex-grow: 1;
+}
+
+.contenedor-productos h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilos de la tarjeta de producto */
+.tarjeta-producto {
+    background-color: var(--color-background-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.2rem;
+    color: var(--color-text-primary);
+    margin: 0.5rem 0;
+}
+
+.categoria-producto {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.precio-producto {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-accent-green);
+    margin: 0.5rem 0 1rem;
+}
+
+.cuadricula-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
