@@ -114,7 +114,7 @@ const renderizarProductosEnCatalogo = (productosAMostrar) => {
         const tarjetaProducto = document.createElement('div');
         tarjetaProducto.classList.add('tarjeta-producto');
         tarjetaProducto.innerHTML = `
-            <img src="../src/assets/img/products/${producto.image}" alt="${producto.name}">
+            <img src="../src/assets/img/${producto.image}" alt="${producto.name}">
             <h3>${producto.name}</h3>
             <p class="categoria-producto">${producto.category}</p>
             <p class="precio-producto">${formatPrice(producto.price)}</p>
@@ -149,7 +149,7 @@ const configurarFiltros = () => {
 
 // --- Lógica para la página de inicio (index.html) ---
 const renderizarProductosEnInicio = () => {
-    const cuadriculaProductosInicio = document.querySelector('.productos-destacados .cuadricula-productos');
+    const cuadriculaProductosInicio = document.querySelector('.cuadricula-productos');
     if (cuadriculaProductosInicio) {
         renderizarProductosEnCatalogo(productos.slice(0, 4));
     }
@@ -175,7 +175,7 @@ const renderizarDetalleProducto = () => {
     document.getElementById('precio-producto').textContent = formatPrice(producto.price);
     document.getElementById('descripcion-producto').textContent = producto.description;
     const imagenProducto = document.querySelector('.imagen-producto img');
-    imagenProducto.src = `../src/assets/img/products/${producto.image}`;
+    imagenProducto.src = `../src/assets/img/${producto.image}`;
     imagenProducto.alt = producto.name;
     // Opcional: Renderizar productos relacionados
     const productosRelacionados = productos.filter(p => p.category === producto.category && p.id !== producto.id).slice(0, 4);
@@ -187,7 +187,7 @@ const renderizarDetalleProducto = () => {
                 const tarjetaRelacionada = document.createElement('div');
                 tarjetaRelacionada.classList.add('tarjeta-producto');
                 tarjetaRelacionada.innerHTML = `
-                    <img src="../src/assets/img/products/${p.image}" alt="${p.name}">
+                    <img src="../src/assets/img/${p.image}" alt="${p.name}">
                     <h3>${p.name}</h3>
                     <p class="precio-producto">${formatPrice(p.price)}</p>
                     <a href="detalle-producto.html?id=${p.id}" class="boton-cta">Ver Detalle</a>
