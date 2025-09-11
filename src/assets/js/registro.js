@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const fechaNacimiento = document.getElementById('fechaNacimiento').value;
     const edad = calcularEdad(fechaNacimiento);
 
-  
-
     if (edad < 18) {
       alert('Debes tener al menos 18 años para registrarte en Level-Up Gamer.');
       return;
@@ -31,7 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Aquí podrías agregar más validaciones si lo deseas
 
     // Simulación de almacenamiento (puedes modularizar esto luego)
-   
+    const usuario = {
+      nombre,
+      correo,
+      telefono,
+      direccion,
+      contrasena // ⚠️ En producción, nunca guardes contraseñas en texto plano
+    };
 
     localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario));
     alert('Registro exitoso. ¡Bienvenido a Level-Up Gamer!');
@@ -52,22 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
   return edad;
   }
 
-
-
-  // Capturar categorías seleccionadas
-    const checkboxes = document.querySelectorAll('input[name="categorias"]:checked');
-    const categoriasSeleccionadas = Array.from(checkboxes).map(cb => cb.value);
-
-    // Agregar al objeto usuario
-    const usuario = {
-    nombre,
-    correo,
-    telefono,
-    direccion,
-    fechaNacimiento,
-    contrasena,
-    categorias: categoriasSeleccionadas
-    };
+  const usuario = {
+  nombre,
+  correo,
+  telefono,
+  direccion,
+  fechaNacimiento,
+  contrasena
+};
 
 localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario));
   
