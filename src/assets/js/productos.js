@@ -151,7 +151,7 @@ const configurarFiltros = () => {
 const renderizarProductosEnInicio = () => {
     const cuadriculaProductosInicio = document.querySelector('.cuadricula-productos');
     if (cuadriculaProductosInicio) {
-        renderizarProductosEnCatalogo(productos.slice(0, 4));
+        renderizarProductosEnCatalogo(productos.slice(0, 10));
     }
 };
 
