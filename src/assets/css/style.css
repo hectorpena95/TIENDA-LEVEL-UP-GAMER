@@ -169,3 +169,8 @@ footer {
   color: #00aaff;
   text-decoration: underline;
 }
+.formulario-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Puedes ajustar este valor para más o menos espacio */
+}
