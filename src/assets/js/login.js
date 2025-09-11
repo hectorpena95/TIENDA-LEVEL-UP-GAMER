@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    if (
-      correoIngresado === usuarioGuardado.correo &&
+    if (correoIngresado === usuarioGuardado.correo &&
       contrasenaIngresada === usuarioGuardado.contrasena
     ) {
       alert(`Bienvenido, ${usuarioGuardado.nombre}!`);
-      // Aquí podrías redirigir al catálogo o dashboard
-      window.location.href = 'catalogo.html';
+      localStorage.setItem('usuarioLogueado', true);
+      localStorage.setItem('nombreUsuario', usuarioGuardado.nombre);
+      window.location.href = 'inicio.html';
     } else {
       alert('Correo o contraseña incorrectos. Intenta nuevamente.');
     }
