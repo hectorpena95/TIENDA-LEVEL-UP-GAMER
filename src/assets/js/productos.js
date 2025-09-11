@@ -53,7 +53,7 @@ const productos = [
         name: 'Silla Gamer Secretlab Titan',
         category: 'sillas-gamers',
         price: 349990,
-        image: 'secretlab-titan.jpg',
+        image: 'secretlab-titan.webp',
         description: 'Diseñada para el máximo confort, esta silla ofrece un soporte ergonómico y personalización ajustable para sesiones de juego prolongadas.'
     },
     {
@@ -151,7 +151,7 @@ const configurarFiltros = () => {
 const renderizarProductosEnInicio = () => {
     const cuadriculaProductosInicio = document.querySelector('.cuadricula-productos');
     if (cuadriculaProductosInicio) {
-        renderizarProductosEnCatalogo(productos.slice(0, 4));
+        renderizarProductosEnCatalogo(productos.slice(0, 10));
     }
 };
 

@@ -7,11 +7,12 @@
     
     <link rel="stylesheet" href="../src/assets/css/variables.css">
     <link rel="stylesheet" href="../src/assets/css/style.css">
-    <link rel="stylesheet" href="../src/assets/css/carrito.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../src/assets/css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="pagina-carrito">
 
     <header>
         <div class="logo">
@@ -26,21 +27,15 @@
         </nav>
     </header>
 
-    <main class="cart-page">
-        <h1>Tu Carrito de Compras</h1>
-        <section class="cart-container">
-            <div id="cart-items" class="cart-items">
-                <p class="loading-message">Cargando carrito...</p>
-            </div>
-            
-            <aside class="cart-summary">
-                <h2>Resumen de la Compra</h2>
-                <div class="summary-details">
-                    <p>Total:</p>
-                    <p id="cart-total">$0 CLP</p>
+    <main>
+        <section class="seccion-carrito">
+            <h1>Tu Carrito de Compras</h1>
+            <div id="items-carrito" class="contenedor-items">
                 </div>
-                <button class="cta-button checkout-btn">Proceder al Pago</button>
-            </aside>
+            <div class="resumen-carrito">
+                <p>Total: <span id="total-carrito">$0 CLP</span></p>
+                <button class="boton-cta boton-pagar">Proceder al Pago</button>
+            </div>
         </section>
     </main>
 
@@ -48,5 +43,7 @@
         <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="../src/assets/js/products.js"></script> <script src="../src/assets/js/cart.js"></script> </body>
+    <script src="../src/assets/js/productos.js"></script>
+    <script src="../src/assets/js/carrito.js"></script>
+</body>
 </html>
