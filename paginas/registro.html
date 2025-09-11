@@ -9,34 +9,52 @@
 </head>
 <body class="pagina-registro">
 
-  <main class="formulario-container">
-    <h2>Crear Cuenta</h2>
-    <form id="form-registro">
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" name="nombre" required>
+  <!-- Contenedor principal para layout horizontal -->
+  <main class="registro-wrapper">
 
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required>
 
-      <label for="telefono">Teléfono (opcional):</label>
-      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+    <!-- Formulario de registro -->
+    <div class="formulario-container">
+      <h2>Crear Cuenta</h2>
+      <form id="form-registro">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-      <label for="direccion">Dirección de envío:</label>
-      <textarea id="direccion" name="direccion" required></textarea>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
 
-      <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" name="contrasena" required>
+        <label for="telefono">Teléfono (opcional):</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
 
-      <label for="confirmarContrasena">Reingresa tu contraseña:</label>
-      <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+        <label for="direccion">Dirección de envío:</label>
+        <textarea id="direccion" name="direccion" required></textarea>
 
-      <label for="fechaNacimiento">Fecha de nacimiento:</label>
-      <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
 
-      <button type="submit">Registrarse</button>
-    </form>
+        <label for="confirmarContrasena">Reingresa tu contraseña:</label>
+        <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
 
-    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+        <button type="submit">Registrarse</button>
+      </form>
+
+      <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+
+     <!-- Panel lateral de categorías -->
+    <aside class="categorias-container">
+      <h3>Categorías favoritas</h3>
+      <label><input type="checkbox" name="categorias" value="FPS"> FPS</label>
+      <label><input type="checkbox" name="categorias" value="TERROR"> TERROR</label>
+      <label><input type="checkbox" name="categorias" value="ZOMBIES"> ZOMBIES</label>
+      <label><input type="checkbox" name="categorias" value="RPG"> RPG</label>
+      <label><input type="checkbox" name="categorias" value="ESTRATEGIA"> ESTRATEGIA</label>
+      <label><input type="checkbox" name="categorias" value="AVENTURA"> AVENTURA</label>
+    </aside>
+
   </main>
 
   <script src="../src/assets/js/registro.js"></script>
