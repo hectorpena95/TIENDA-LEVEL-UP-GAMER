@@ -54,11 +54,7 @@ nav ul li {
 }
 
 /* Estilos de las secciones principales */
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .hero-section {
     text-align: center;
@@ -174,9 +170,4 @@ footer {
 .formulario-container a {
     color: #00aaff;
     text-decoration: underline;
-}
-.formulario-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Puedes ajustar este valor para más o menos espacio */
 }
