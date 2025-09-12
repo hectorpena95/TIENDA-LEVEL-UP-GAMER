@@ -1,0 +1,93 @@
+body.pagina-inicio {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header igual al index */
+header {
+  background-color: var(--color-background-secondary);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-accent-blue);
+}
+
+.logo a {
+  font-family: var(--font-family-headings);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-accent-green);
+}
+
+/* Dashboard */
+.dashboard-wrapper {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bienvenida h2 {
+  color: #00aaff;
+  font-size: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #0088cc;
+}
+
+/* Productos destacados */
+.destacados h3 {
+  margin-top: 3rem;
+  color: var(--color-accent-green);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.producto {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}

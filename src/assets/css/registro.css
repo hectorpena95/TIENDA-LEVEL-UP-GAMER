@@ -1,0 +1,132 @@
+/* Estilos específicos para la página de registro */
+
+body.pagina-registro {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-family-headings);
+  color: var(--color-accent-blue);
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent-green);
+}
+
+/* Contenedor general del layout */
+.registro-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el conjunto en pantalla */
+  align-items: flex-start; /* Alinea ambos bloques arriba */
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Formulario de registro */
+.formulario-container {
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 380px;
+}
+
+.formulario-container h2 {
+  color: #00aaff;
+  text-align: center;
+}
+
+.formulario-container label {
+  font-weight: bold;
+}
+
+.formulario-container input,
+.formulario-container textarea,
+.formulario-container button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formulario-container input,
+.formulario-container textarea {
+  background-color: #222;
+  color: #fff;
+}
+
+.formulario-container button {
+  background-color: #00aaff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-container button:hover {
+  background-color: #0088cc;
+}
+
+.formulario-container p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.formulario-container a {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.formulario-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Panel de categorías */
+.categorias-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background-color: #111;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  margin-top: 0; /* Alineado arriba */
+}
+
+.categorias-container h3 {
+  color: #00aaff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.categorias-container label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}

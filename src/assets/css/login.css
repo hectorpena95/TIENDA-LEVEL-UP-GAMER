@@ -1,0 +1,132 @@
+/* Estilos generales para la página de login */
+body.pagina-login {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Estilos del Header */
+header {
+  background-color: var(--color-background-secondary);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-accent-blue);
+}
+
+.logo a {
+  font-family: var(--font-family-headings);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-accent-green);
+}
+
+/* Contenedor del login centrado */
+main.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Resta altura del header */
+  padding: 2rem;
+}
+
+
+/* Caja del formulario */
+.login-container {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Título */
+.login-container h2 {
+  color: #00aaff;
+  text-align: center;
+  font-family: var(--font-family-headings);
+}
+
+/* Inputs y etiquetas */
+.login-container label {
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Botón */
+.login-container button {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0088cc;
+}
+
+/* Enlace para registro */
+.login-container p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-container a {
+  color: #00aaff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: var(--color-accent-green);
+}
+.login-container button {
+  display: block;
+  margin: 0 auto; /* Esto lo centra horizontalmente */
+}

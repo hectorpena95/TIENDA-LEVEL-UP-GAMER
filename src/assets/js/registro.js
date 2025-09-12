@@ -11,32 +11,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const direccion = document.getElementById('direccion').value.trim();
     const contrasena = document.getElementById('contrasena').value;
     const confirmarContrasena = document.getElementById('confirmarContrasena').value;
-
     const fechaNacimiento = document.getElementById('fechaNacimiento').value;
-    const edad = calcularEdad(fechaNacimiento);
 
+    const edad = calcularEdad(fechaNacimiento);
     if (edad < 18) {
       alert('Debes tener al menos 18 años para registrarte en Level-Up Gamer.');
       return;
     }
 
-    // Validación de contraseñas
     if (contrasena !== confirmarContrasena) {
       alert('Las contraseñas no coinciden. Por favor, verifica.');
       return;
     }
 
-    // Aquí podrías agregar más validaciones si lo deseas
+    // Capturar categorías seleccionadas
+    const checkboxes = document.querySelectorAll('input[name="categorias"]:checked');
+    const categoriasSeleccionadas = Array.from(checkboxes).map(cb => cb.value);
 
-    // Simulación de almacenamiento (puedes modularizar esto luego)
+    // Crear objeto usuario
     const usuario = {
       nombre,
       correo,
       telefono,
       direccion,
-      contrasena // ⚠️ En producción, nunca guardes contraseñas en texto plano
+      fechaNacimiento,
+      contrasena,
+      categorias: categoriasSeleccionadas
     };
 
+    // Guardar en localStorage
     localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario));
     alert('Registro exitoso. ¡Bienvenido a Level-Up Gamer!');
     form.reset();
@@ -44,27 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function calcularEdad(fechaNacimiento) {
-  const hoy = new Date();
-  const nacimiento = new Date(fechaNacimiento);
-  let edad = hoy.getFullYear() - nacimiento.getFullYear();
-  const mes = hoy.getMonth() - nacimiento.getMonth();
-
-  if (mes < 0 || (mes === 0 && hoy.getDate() < nacimiento.getDate())) {
-    edad--;
+    const hoy = new Date();
+    const nacimiento = new Date(fechaNacimiento);
+    let edad = hoy.getFullYear() - nacimiento.getFullYear();
+    const mes = hoy.getMonth() - nacimiento.getMonth();
+    if (mes < 0 || (mes === 0 && hoy.getDate() < nacimiento.getDate())) {
+      edad--;
+    }
+    return edad;
   }
-
-  return edad;
-  }
-
-  const usuario = {
-  nombre,
-  correo,
-  telefono,
-  direccion,
-  fechaNacimiento,
-  contrasena
-};
-
-localStorage.setItem('usuarioRegistrado', JSON.stringify(usuario));
-  
 });
