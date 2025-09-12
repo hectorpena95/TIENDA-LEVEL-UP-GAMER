@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header id="main-header">
     <div class="logo">
         <a href="index.html">Level-Up Gamer</a>
@@ -27,43 +26,42 @@
     </nav>
 </header>
 
-    <main class="pagina-catalogo">
-        <aside class="barra-lateral">
-            <h2>Filtros</h2>
-            <div class="grupo-filtro">
-                <h3>Categorías</h3>
-                <ul id="lista-categorias">
-                    <li><a href="#" data-categoria="all" class="activo">Todas las Categorías</a></li>
-                    <li><a href="#" data-categoria="juegos-de-mesa">Juegos de Mesa</a></li>
-                    <li><a href="#" data-categoria="accesorios">Accesorios</a></li>
-                    <li><a href="#" data-categoria="consolas">Consolas</a></li>
-                    <li><a href="#" data-categoria="computadores-gamers">Computadores Gamers</a></li>
-                    <li><a href="#" data-categoria="sillas-gamers">Sillas Gamers</a></li>
-                    <li><a href="#" data-categoria="mouse">Mouse</a></li>
-                    <li><a href="#" data-categoria="mousepad">Mousepad</a></li>
-                    <li><a href="#" data-categoria="poleras-personalizadas">Poleras Personalizadas</a></li>
-                    <li><a href="#" data-categoria="polerones-gamers-personalizados">Polerones Gamers Personalizados</a></li>
-                </ul>
-            </div>
-            <div class="grupo-filtro">
-                <h3>Precio</h3>
-                <input type="range" id="rango-precio" min="0" max="1500000" value="1500000">
-                <span id="valor-precio">$1.500.000 CLP</span>
-            </div>
-        </aside>
+<main class="pagina-catalogo">
+    <aside class="barra-lateral">
+        <h2>Filtros</h2>
+        <div class="grupo-filtro">
+            <h3>Categorías</h3>
+            <ul id="lista-categorias">
+                <li><a href="#" data-categoria="all" class="activo">Todas las Categorías</a></li>
+                <li><a href="#" data-categoria="juegos-de-mesa">Juegos de Mesa</a></li>
+                <li><a href="#" data-categoria="accesorios">Accesorios</a></li>
+                <li><a href="#" data-categoria="consolas">Consolas</a></li>
+                <li><a href="#" data-categoria="computadores-gamers">Computadores Gamers</a></li>
+                <li><a href="#" data-categoria="sillas-gamers">Sillas Gamers</a></li>
+                <li><a href="#" data-categoria="mouse">Mouse</a></li>
+                <li><a href="#" data-categoria="mousepad">Mousepad</a></li>
+                <li><a href="#" data-categoria="poleras-personalizadas">Poleras Personalizadas</a></li>
+                <li><a href="#" data-categoria="polerones-gamers-personalizados">Polerones Gamers Personalizados</a></li>
+            </ul>
+        </div>
+        <div class="grupo-filtro">
+            <h3>Precio</h3>
+            <input type="range" id="rango-precio" min="0" max="1500000" value="1500000">
+            <span id="valor-precio">$1.500.000 CLP</span>
+        </div>
+    </aside>
 
-        <section class="contenedor-productos">
-            <h1>Catálogo de Productos</h1>
-            <div class="cuadricula-productos" id="cuadricula-productos">
-                </div>
-        </section>
-    </main>
+    <section class="contenedor-productos">
+        <h1>Catálogo de Productos</h1>
+        <div class="cuadricula-productos" id="cuadricula-productos"></div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Level-Up Gamer. Todos los derechos reservados.</p>
+</footer>
 
-    <script src="../src/assets/js/productos.js"></script>
-    <script src="../src/assets/js/carrito.js"></script>
+<script src="../src/assets/js/productos.js"></script>
+<script src="../src/assets/js/carrito.js"></script>
 </body>
 </html>

@@ -54,7 +54,11 @@ nav ul li {
 }
 
 /* Estilos de las secciones principales */
-
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .hero-section {
     text-align: center;
@@ -114,3 +118,4 @@ footer {
     border-top: 2px solid var(--color-accent-blue);
     color: var(--color-text-secondary);
 }
+
